@@ -1,0 +1,45 @@
+
+.test{
+    background-color: hsl(0, 0%, 98%);
+    background-color: hsl(236, 33%, 92%);
+    background-color: hsl(233, 11%, 84%);
+    background-color: hsl(236, 9%, 61%);
+    background-color: hsl(235, 19%, 35%);
+}
+
+
+
+.input-fild{
+    width: 98%;
+    height: 48px;
+    display: inline-block;
+    margin-top: 6px;
+    background: none;
+    border: none;
+    outline: none;
+    color: hsl(236, 9%, 61%);
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-left: 4.5px;
+}
+
+.input-fild::placeholder{
+    color: hsl(236, 9%, 61%);
+}
+
+.add-button{
+    margin-left: -43px;
+    width: 40px;
+    height: 40px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border: 1px red solid;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.add-button:hover{
+    background-color: aliceblue;
+}
