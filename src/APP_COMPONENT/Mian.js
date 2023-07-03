@@ -8,11 +8,16 @@ import Buttons from './Main_COMPONENT/Buttons';
 
 
 const Main  = ()=>{
+
+   const getToDoObject = (todoObject)=>{
+     console.log(todoObject)
+   }
+
    return(
      <Container style={style['main-ontainer']}>
-        <InputSection></InputSection>
-        <OutPut></OutPut>
-        <Buttons></Buttons>
+        <InputSection onGetFromChild={getToDoObject} />
+        <OutPut />
+        <Buttons />
      </Container>
    )
 }

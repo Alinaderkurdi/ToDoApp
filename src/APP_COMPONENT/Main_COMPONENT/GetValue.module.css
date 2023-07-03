@@ -11,16 +11,17 @@
 
 .input-fild{
     width: 98%;
-    height: 48px;
+    height: 46px;
     display: inline-block;
     margin-top: 6px;
     background: none;
     border: none;
     outline: none;
     color: hsl(236, 9%, 61%);
-    font-size: 1rem;
+    font-size: 1.3rem;
     border-radius: 4px;
     margin-left: 4.5px;
+
 }
 
 .input-fild::placeholder{
@@ -35,8 +36,8 @@
     outline: none;
     cursor: pointer;
     border: none;
-    border: 1px red solid;
-    border-radius: 4px;
+    border: 1px hsl(236, 9%, 61%) solid;
+    border-radius: 30px;
     display: inline-block;
 }
 

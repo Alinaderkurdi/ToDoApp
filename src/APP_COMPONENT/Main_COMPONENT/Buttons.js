@@ -7,12 +7,11 @@ const Buttons = ()=>{
 
   const [CurrentButtonOperation, buttonOperationUpDater] = useState('ALL')
     
-
   const getCurrentButtonOperation = (e)=>{
     buttonOperationUpDater(e.target.value)
   }
 
-  console.log(CurrentButtonOperation)
+  //console.log(CurrentButtonOperation)
 
   return(
       <Container style={style['buttons-main']}>
