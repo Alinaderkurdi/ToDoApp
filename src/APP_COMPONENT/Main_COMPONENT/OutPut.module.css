@@ -5,4 +5,16 @@
     margin: 20px auto;
     margin-bottom: 0px;
     border-radius: 4px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
+
+.out-put-main::-webkit-scrollbar{
+    width: 6px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #696868;
+};
+
+
+/*fix the bog of tumph scrollbar*/

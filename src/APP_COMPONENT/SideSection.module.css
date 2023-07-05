@@ -1,0 +1,7 @@
+
+.side-main {
+    width: 100%;
+    height: 100vh;
+    grid-column: 1/2;
+    background-color: #E9E8E8;
+}

@@ -19,6 +19,7 @@
     outline: none;
     color: hsl(236, 9%, 61%);
     font-size: 1.3rem;
+    font-family: inherit;
     border-radius: 4px;
     margin-left: 4.5px;
 

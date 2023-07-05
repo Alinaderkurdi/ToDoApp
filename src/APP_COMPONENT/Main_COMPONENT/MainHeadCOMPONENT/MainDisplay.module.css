@@ -1,0 +1,18 @@
+.display-main {
+    width: 200px;
+    height: 75px;
+    border: 1px red solid;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+
+
+.app-section-name{
+    color: #ffff;
+}
+
+
+.disply-date{
+    margin-top: 2px;
+    color: #ffff;
+}
