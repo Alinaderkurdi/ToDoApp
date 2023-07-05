@@ -12,6 +12,9 @@ const MainHead = ()=>{
     return (
       <Container style={style['main-head']}>
         <MainDisplayDate />
+        <Button buttonProps={style['color-them-button']}>
+          <i className="bi bi-three-dots"></i>
+        </Button>
       </Container>
     )
 }
