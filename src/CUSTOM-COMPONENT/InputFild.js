@@ -9,7 +9,7 @@ const InputFild = (props)=>{
     return(
        <Container style={props.inputContainerStyle}>
         <input type={props.inputType} className={props.inputFildStyle}  placeholder={props.placeholderText}/>
-        <Button buttonProps={props.inputButtonStyle}>
+        <Button buttonProps={props.inputButtonStyle} functionHandeler={props.functionPointer}>
             {props.buttonIcone}
         </Button>
        </Container>
