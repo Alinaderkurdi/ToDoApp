@@ -10,6 +10,10 @@ import InputFild from '../CUSTOM-COMPONENT/InputFild';
 
 
 const Main  = ()=>{
+  
+  const test = ()=>{
+    console.log('add a task')
+  }
 
   return(
     <Container style={style['main-ontainer']}>
@@ -19,7 +23,8 @@ const Main  = ()=>{
        placeholderText={'Add a Task'}
        inputFildStyle={style['add-task-inputfild-style']}
        inputButtonStyle={style['add-button']}
-       buttonIcone={<i className="bi bi-plus-lg"></i>}/>
+       buttonIcone={<i className="bi bi-plus-lg"></i>}
+       functionHandeler={test}/>
     </Container>
   )
 }

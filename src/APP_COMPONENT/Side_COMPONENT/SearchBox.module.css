@@ -1,0 +1,37 @@
+
+
+.sharch-box-container{
+    width: 90%;
+    height: 30px;
+    border: 1.5px #696969 solid;
+    margin-top: 30px;
+    margin-left: 5px;
+    border-radius: 4px;
+    /*background-color: #11100F;*/
+}
+
+
+.search-box-inputfild-style{
+    width: 99%;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #ffff;
+    box-shadow: 
+        0px 24px 38px 3px hsla(0,0%,0%,0.14), 
+		0px 9px 46px 8px hsla(0,0%,0%,0.12), 
+		0px 11px 15px -7px hsla(0,0%,0%,0.2);
+}
+
+
+.search-button{
+    width: 27px;
+    height: 27px;
+    margin-left: -25px;
+    color: #696969;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+}
