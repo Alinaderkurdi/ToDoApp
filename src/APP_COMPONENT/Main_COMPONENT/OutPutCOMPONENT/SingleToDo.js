@@ -1,7 +1,7 @@
 import React from 'react'; 
 
-import Container from '../../CUSTOM-COMPONENT/Container';
-import Button from '../../CUSTOM-COMPONENT/Button';
+import Container from '../../../CUSTOM-COMPONENT/Container';
+import Button from '../../../CUSTOM-COMPONENT/Button';
 import style from './SingleToDo.module.css';
 
 const SingleToDo = ()=>{

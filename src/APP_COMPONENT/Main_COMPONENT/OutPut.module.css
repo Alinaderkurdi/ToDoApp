@@ -1,15 +1,22 @@
 .out-put-main{
-    width: 99%;
-    height: 550px;
+    width: 90%;
+    height: 610px;
     background-color: #25273C;
-    margin: 20px auto;
+    background: none;
+    border: 1px red solid;
+    margin: 10px auto;
     margin-bottom: 0px;
     border-radius: 4px;
+   /* overflow: scroll;
+    overflow-x: hidden;*/
+}
+
+.add-scrollbar{
     overflow: scroll;
     overflow-x: hidden;
 }
 
-.out-put-main::-webkit-scrollbar{
+.add-scrollbar::-webkit-scrollbar{
     width: 6px;
     height: 30px;
     border-radius: 20px;
