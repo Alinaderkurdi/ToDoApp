@@ -1,17 +1,52 @@
 .singel-to-do-ontainer {
-    width: 99%;
-    height: 60px;
-    border-bottom: 0.5px hsl(235, 19%, 35%) solid;;
-    margin: 2px auto;
+    width: 99.5%;
+    height: 65px;
+    background-color: #252423;
+    margin: 4px auto;
     margin-bottom: 0px;
-    border-radius: 0.5px;
+    border: 1px #73B1F0 solid;
+    border-radius: 4px;
     display: grid;
-    grid-template-columns: 90% 10%;
-    grid-template-rows: 16px 44px;
+    grid-template-columns: 50px 86.2% 50px;
+    grid-template-rows: 40px 20px;
+}
+
+.complete-button{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: none;
+    border: 1px #54a9fe solid;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 19px auto;
+}
+
+.import-button{
+    width: 30px;
+    height: 30px;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background: none;
+    border: none;
+    outline: none;
+    border: 1px solid;
+    margin: 17px auto;
+    font-size: 1.2rem;
+    color: #FF00AF;
+}
+
+.text-holder{
+    font-size: 1.1rem;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 20px;
 }
 
 
-.text-holder{
+/*.text-holder{
     color: #ffff;
     font-size: 1.1rem;
     grid-row: 2/3;
@@ -41,4 +76,4 @@
     margin: 2px auto;
     margin-top: 10px;
     margin-bottom: 0px;
-}
+}*/

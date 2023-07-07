@@ -1,14 +1,38 @@
 import React from 'react';
 import Container from '../../CUSTOM-COMPONENT/Container';
-//import SingleToDo from '../SingleToDo/SingleToDo';
+import SingleToDo from '../Main_COMPONENT/OutPutCOMPONENT/SingleToDo';
 import style from './OutPut.module.css';
 
+
+
+
+
 const OutPut = ()=>{
-  let addScrollbar = false;
 
   return(
-    <Container style={`${style['out-put-main']} ${addScrollbar ? style['add-scrollbar']:''}`}>
-      
+    <Container style={`${style['out-put-main']}`}>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
+      <SingleToDo></SingleToDo>
     </Container>
   )
 }

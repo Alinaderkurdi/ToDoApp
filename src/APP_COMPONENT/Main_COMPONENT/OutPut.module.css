@@ -3,25 +3,33 @@
     height: 610px;
     background-color: #25273C;
     background: none;
-    border: 1px red solid;
+   /* border: 1px red solid;*/
     margin: 10px auto;
     margin-bottom: 0px;
     border-radius: 4px;
-   /* overflow: scroll;
-    overflow-x: hidden;*/
-}
-
-.add-scrollbar{
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
 }
 
-.add-scrollbar::-webkit-scrollbar{
+
+.out-put-main::-webkit-scrollbar{
     width: 6px;
-    height: 30px;
+    height: 100vh;
     border-radius: 20px;
-    background-color: #696868;
+   /* background-color: #696868;*/
+    background: none
 };
 
+::-webkit-scrollbar-track{
+    appearance: none;
+    border-radius: 6px;
+}
 
+::-webkit-scrollbar-thumb{
+    appearance: none;
+    width: 5px;
+    height: 5px;
+    background-color: #696868;
+    border-radius: 6px;
+}
 /*fix the bog of tumph scrollbar*/

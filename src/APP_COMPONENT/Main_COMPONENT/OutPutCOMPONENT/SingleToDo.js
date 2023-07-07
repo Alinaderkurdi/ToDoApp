@@ -7,14 +7,14 @@ import style from './SingleToDo.module.css';
 const SingleToDo = ()=>{
     return (
         <Container style={style['singel-to-do-ontainer']}>
+            <Button buttonProps={style['complete-button']}>
+
+            </Button>
             <p className={style['text-holder']}>
-                hello world
+               don't be a overthink
             </p>
-            <p className={style['date-holder']}>
-               22:10
-            </p>
-            <Button buttonProps={style['completed-button']}>
-                
+            <Button buttonProps={style['import-button']}>
+               <i className={"bi bi-star"}></i>
             </Button>
         </Container>
     )

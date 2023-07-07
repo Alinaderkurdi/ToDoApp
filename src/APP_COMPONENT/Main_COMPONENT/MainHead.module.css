@@ -1,7 +1,7 @@
 .main-head{
     width: 90%;
     height: 83px;
-    border : 1px red solid;
+  /*  border : 1px red solid; */
     margin: 15px auto;
     margin-bottom: 0px;
     display: flex;
