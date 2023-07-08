@@ -5,7 +5,7 @@ import Container from './Container';
 
 
 const InputFild = (props)=>{
-    console.log(props)
+   // console.log(props)
     return(
        <Container style={props.inputContainerStyle}>
         <input type={props.inputType} className={props.inputFildStyle}  placeholder={props.placeholderText}/>
