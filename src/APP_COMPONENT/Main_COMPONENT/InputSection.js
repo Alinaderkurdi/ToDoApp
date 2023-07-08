@@ -1,43 +1,53 @@
-import React from 'react';
+import React , { useRef , useState} from 'react';
 import Container from '../../CUSTOM-COMPONENT/Container';
 import style from './InputSection.module.css';
-import GetValue from './GetValue';
+import InputFild from '../../CUSTOM-COMPONENT/InputFild';
 
 
-const InputSection = (props)=>{
-   
-    const addDate = ()=>{
-        const date = new Date()
-        const time = [date.getHours().toString(), date.getMinutes().toString(), date.getDay(), date.getSeconds().toString()]
-        const  [ hours, minutes ] = time
-        return [`${hours}:${minutes}`, time[2],time[3]]
-    }
+const InputSection = ()=>{
+   const  [inputFildplaceholderText, inputFildplaceholderUpDater] = useState('Add a Task')
+   const inputFild = useRef()
 
-    const keyGenerator = (keylenght)=>{
-        const string = '1qaz2wsx3edc4rfv5tgb6yhn7ujm8ik9ol0p';
-        let result =''
-        let lenghtKey = keylenght;
-        for(let i = 0; i < lenghtKey ; i++){
-          result += string.charAt(Math.floor(Math.random() * lenghtKey))
-        }
-        return  result
-    }
+   const [ValidInput, ValidInputUpDater] = useState(true)
 
-    const getValue = (inputValue)=>{
-        const todoData = {
-            text : inputValue,
-            date : addDate(),
-            uniqueKey : keyGenerator(4)
-        }
-        
-        props.onGetFromChild(todoData)
-    }
 
-    return(
-       <Container style={style['input-section-main']}>
-        <GetValue  onGetData={getValue} />
-       </Container>
-    )
+   const inputValidation = (inputValue)=>{
+     if(inputValue.length === 0 || inputValue.trim().length === 0){
+        inputFildplaceholderUpDater('some masage to display inValid input')
+        inputFild.current.value = ''
+        ValidInputUpDater(false)
+        return false
+     }else{
+       inputFildplaceholderUpDater('Add a Task')
+       ValidInputUpDater(true)
+       return true
+     }
+   }
+
+
+
+   const getValue = ()=>{
+      if(inputValidation(inputFild.current.value)){
+         console.log(inputFild.current.value)
+      }else{
+         return
+      }
+       
+   }
+
+
+   return(
+      <Container style={style['input-section-main']}>
+       <InputFild 
+         elementRef={inputFild}
+         inputContainerStyle={style['input-container-style']}
+         placeholderText={inputFildplaceholderText}
+         inputFildStyle={style['add-task-inputfild-style']}
+         inputButtonStyle={`${style['add-button']}`}
+         buttonIcone={<i className="bi bi-plus-lg"></i>}
+         functionPointer={getValue} />
+      </Container>
+   )
 }
 
 

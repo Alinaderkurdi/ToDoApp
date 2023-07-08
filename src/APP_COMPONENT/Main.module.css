@@ -6,20 +6,19 @@
     grid-column: 2/3;
 }
 
-
+/*
 .input-container-style{
     width: 90%;
     height: 55px;
     border-radius: 4px;
     background-color: #27242E;
-   /* margin: 100px auto;*/
+    margin: 100px auto;
     margin: 10px auto;
     box-shadow: 
         0px 24px 38px 3px hsla(0,0%,0%,0.14), 
 		0px 9px 46px 8px hsla(0,0%,0%,0.12), 
 		0px 11px 15px -7px hsla(0,0%,0%,0.2);
 }
-
 
 
 .add-task-inputfild-style{
@@ -52,3 +51,4 @@
     font-size: 1.3rem;
     cursor: pointer;
 }
+*/

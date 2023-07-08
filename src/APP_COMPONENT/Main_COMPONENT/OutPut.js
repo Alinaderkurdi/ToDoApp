@@ -12,27 +12,6 @@ const OutPut = ()=>{
   return(
     <Container style={`${style['out-put-main']}`}>
       <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
-      <SingleToDo></SingleToDo>
     </Container>
   )
 }
