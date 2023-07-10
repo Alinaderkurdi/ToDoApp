@@ -8,8 +8,15 @@ const InputFild = (props)=>{
    // console.log(props)
     return(
        <Container style={props.inputContainerStyle}>
-        <input type={props.inputType} className={props.inputFildStyle}  placeholder={props.placeholderText} ref={props.elementRef}/>
-        <Button buttonProps={props.inputButtonStyle} functionHandeler={props.functionPointer}>
+        <input type={props.inputType}
+         className={props.inputFildStyle}
+         placeholder={props.placeholderText}
+         ref={props.elementRef}
+         onChange={props.functionHandeler}/>
+         
+        <Button buttonProps={props.inputButtonStyle}
+         functionHandeler={props.functionPointer}
+         disabledButton={props.buttonDisabled}>
             {props.buttonIcone}
         </Button>
        </Container>

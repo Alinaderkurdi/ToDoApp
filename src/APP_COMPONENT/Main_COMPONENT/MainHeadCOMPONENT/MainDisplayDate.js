@@ -23,21 +23,21 @@ const MainDisplayDate = ()=>{
     ]
 
     const weekDayName = [
+        'SunDay',
         'Monday',
         'Tuesday',
         'Wednesday',
         'Thursday',
         'Friday',
-        'Saturday',
-        'SunDay'
+        'Saturday'
     ]
 
-    const getCurrentDate = ()=>{
+    const getDate = ()=>{
       const month = date.getMonth()
       const currentMonth = months[month]
       const days = date.getDate().toString()
       const dayOnWeake = date.getDay()
-      return  [ currentMonth,  weekDayName[dayOnWeake -1], days]
+      return  [ currentMonth,  weekDayName[dayOnWeake], days]
     }
 
     return (
@@ -45,7 +45,7 @@ const MainDisplayDate = ()=>{
             <h1 className={style['app-section-name']}>
              My Day
             </h1>
-            <p className={style['disply-date']}>{`${getCurrentDate()[1]} ,${getCurrentDate()[0]} ,${getCurrentDate()[2]}`}</p>
+            <p className={style['disply-date']}>{`${getDate()[1]} ,${getDate()[0]} ,${getDate()[2]}`}</p>
         </Container>
     )
 }

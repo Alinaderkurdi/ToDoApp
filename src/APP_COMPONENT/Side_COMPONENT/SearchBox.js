@@ -1,25 +1,33 @@
 
-import React from 'react';
+import React , {useRef, useState} from 'react';
 
 import style from './SearchBox.module.css';
 import  InputFild from '../../CUSTOM-COMPONENT/InputFild'; 
+import useInputValidation from '../../CUTOM-HOOKS/useInputValidtion';
 
 const SearchBox = ()=>{
-    const getFromSerach = ()=>{
-      console.log('Search ...')  
-    }
+  const searchFild = useRef()
+  const [disabledButton, inputValue , getInput ] = useInputValidation()
+
+  const getFromSerach = ()=>{
+    console.log(inputValue)
+  }
     
-    return(
-        <InputFild 
-           inputContainerStyle={style['sharch-box-container']}
-           placeholderText={'Search....'}
-           inputFildStyle={style['search-box-inputfild-style']}
-           inputButtonStyle={style['search-button']}
-           buttonIcone={<i className="bi bi-search"></i>}
-           functionHandeler={getFromSerach}>
-        </InputFild>
-        
-    )
+  return(
+      <InputFild 
+        elementRef={searchFild}
+        functionHandeler={getInput}
+        inputContainerStyle={style['sharch-box-container']}
+        placeholderText={'Search for ToDo'}
+        inputFildStyle={style['search-box-inputfild-style']}
+        inputButtonStyle={`${style['search-button']} ${disabledButton ? style['disabled-bt'] : ''}`}
+        buttonIcone={<i className="bi bi-search"></i>}
+        functionPointer={getFromSerach}
+        buttonDisabled={disabledButton}
+        >
+      </InputFild>
+      
+  )
 }
 
 
