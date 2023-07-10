@@ -7,7 +7,7 @@
     border: 1px #73B1F0 solid;
     border-radius: 4px;
     display: grid;
-    grid-template-columns: 50px 86.2% 50px;
+    grid-template-columns: 7% 86.2% 7%;
     grid-template-rows: 40px 20px;
 }
 

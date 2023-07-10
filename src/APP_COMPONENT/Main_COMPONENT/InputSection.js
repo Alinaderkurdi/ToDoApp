@@ -1,4 +1,4 @@
-import React , { useRef , useState} from 'react';
+import React  from 'react';
 import Container from '../../CUSTOM-COMPONENT/Container';
 import style from './InputSection.module.css';
 import InputFild from '../../CUSTOM-COMPONENT/InputFild';
@@ -22,6 +22,14 @@ const InputSection = ()=>{
   //   setInputValue(event.target.value)
   //  }
   //}
+
+ // {
+ //  key: '123',
+ //  content : 'don be a overthink',
+ //  addToImportent : false,
+ //  sectionName : 'my Day// add a function for get current app section',
+ //  complete: false
+ // }
 
    const getCurrentValue = ()=>{
       console.log(inputValue)

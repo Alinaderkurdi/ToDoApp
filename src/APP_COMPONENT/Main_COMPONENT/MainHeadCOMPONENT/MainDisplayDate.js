@@ -1,11 +1,12 @@
 import React from 'react';
 
-import style from './MainDisplay.module.css';
+import classes from './MainDisplay.module.css';
 
 import Container from '../../../CUSTOM-COMPONENT/Container';
 
 const MainDisplayDate = ()=>{
     // My Day <i className="bi bi-brightness-high"></i>
+    //line 48 need to add inline style!!!
     const date = new Date()
     const months= [
         'January',
@@ -41,11 +42,13 @@ const MainDisplayDate = ()=>{
     }
 
     return (
-        <Container style={style['display-main']}>
-            <h1 className={style['app-section-name']}>
+        <Container style={classes['display-main']}>
+            <h1 className={classes['app-section-name']}>
              My Day
             </h1>
-            <p className={style['disply-date']}>{`${getDate()[1]} ,${getDate()[0]} ,${getDate()[2]}`}</p>
+            <i className={`bi ${'bi-brightness-high'} ${classes['icon-test']}`}>
+            </i>
+            <p className={classes['disply-date']}>{`${getDate()[1]} ,${getDate()[0]} ,${getDate()[2]}`}</p>
         </Container>
     )
 }
