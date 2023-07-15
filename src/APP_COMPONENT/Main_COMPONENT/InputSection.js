@@ -1,4 +1,4 @@
-import React  from 'react';
+import React ,{ useRef } from 'react';
 import Container from '../../CUSTOM-COMPONENT/Container';
 import style from './InputSection.module.css';
 import InputFild from '../../CUSTOM-COMPONENT/InputFild';
@@ -6,23 +6,31 @@ import useInputValidation from '../../CUTOM-HOOKS/useInputValidtion';
 
 
 
+
 const InputSection = ()=>{
-   const [disabledButton, inputValue , getInput ] = useInputValidation()
+   const [disabledButton, inputValue , getInput, setDisabledButton] = useInputValidation()
+   const inputFild = useRef()
 
+   
+   const keyGenerator = (keylenght)=>{
+      const string = '1qaz2wsx3edc4rfv5tgb6yhn7ujm8ik9ol0p';
+      let result =''
+      let lenghtKey = keylenght
+      for(let i = 0; i < lenghtKey ; i++){
+        result += string.charAt(Math.floor(Math.random() * lenghtKey))
+      }
+      return result;
+   }
 
-  //const [disabledButton , setDisabledButton] = useState(true)
-  //const [inputValue , setInputValue] =  useState('')
-
-  //const getInput = (event)=>{
-  //  console.log('run get Value')
-  //  if(event.target.value.length === 0 || event.target.value.trim().length === 0){
-  //   setDisabledButton(true)
-  //  }else{
-  //   setDisabledButton(false)
-  //   setInputValue(event.target.value)
-  //  }
-  //}
-
+   const createNewToDo = (value)=>{
+    const toDo = {
+      content : value,
+      addToImport: false,
+      complete: false,
+      key:keyGenerator(4)
+    }
+    return toDo;
+   }
  // {
  //  key: '123',
  //  content : 'don be a overthink',
@@ -32,7 +40,9 @@ const InputSection = ()=>{
  // }
 
    const getCurrentValue = ()=>{
-      console.log(inputValue)
+      console.log(createNewToDo(inputValue))
+      inputFild.current.value = ''
+      setDisabledButton(true)
    }
 
 
@@ -40,7 +50,7 @@ const InputSection = ()=>{
       <Container style={style['input-section-main']}>
        <InputFild 
          functionHandeler={getInput}
-         elementRef={null}
+         elementRef={inputFild}
          inputContainerStyle={style['input-container-style']}
          placeholderText={'Add a Task'}
          inputFildStyle={style['add-task-inputfild-style']}
