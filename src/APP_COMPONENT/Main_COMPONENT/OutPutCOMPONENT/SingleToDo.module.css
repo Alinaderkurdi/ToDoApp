@@ -22,6 +22,11 @@
     grid-column: 1/2;
     grid-row: 1/3;
     margin: 19px auto;
+    color: #54a9fe;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .import-button{
@@ -43,4 +48,19 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 20px;
+}
+
+.complete-todo {
+    text-decoration: line-through
+}
+
+
+.option-box{
+    width: 80%;
+    height: 18px;
+    border: 1px red solid;
+    margin: 0px auto;
+    margin-top: 4px;
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
