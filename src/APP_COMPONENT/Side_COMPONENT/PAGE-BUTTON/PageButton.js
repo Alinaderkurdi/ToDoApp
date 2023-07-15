@@ -3,13 +3,16 @@ import classes from './PageButton.module.css';
 import Container from '../../../CUSTOM-COMPONENT/Container';
 
 const PageButton = (props)=>{
+   
+   const getLinkButtonData = (event)=>{
+     event.preventDefault()
+     console.log(event.target.closest('a').href)
+     console.log(props)
+   }
 
     return(
-            <a className={classes['link-button']} href='../../'>
-              <i className={`bi ${props.iconName}`}style={{color: props.iconColor,fontSize: '1.3rem'}}>
-
-              </i>
-              {props.children}
+            <a className={classes['link-button']} href='http://localhost:3000/myday' onClick={getLinkButtonData}>
+              <i className={`bi ${props.iconName}`}style={{color: props.iconColor,fontSize: '1.3rem'}}></i>
              <p className={classes['section-name']} >
                 {props.SectionName}
              </p>

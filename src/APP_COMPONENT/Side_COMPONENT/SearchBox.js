@@ -7,10 +7,13 @@ import useInputValidation from '../../CUTOM-HOOKS/useInputValidtion';
 
 const SearchBox = ()=>{
   const searchFild = useRef()
-  const [disabledButton, inputValue , getInput ] = useInputValidation()
+  const [disabledButton, inputValue , getInput ,setDisabledButton ] = useInputValidation()
 
   const getFromSerach = ()=>{
     console.log(inputValue)
+    searchFild.current.value = '';
+    setDisabledButton(true)
+
   }
     
   return(
