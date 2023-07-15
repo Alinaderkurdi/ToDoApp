@@ -46,7 +46,7 @@ const MainDisplayDate = ()=>{
             <h1 className={classes['app-section-name']}>
              My Day
             </h1>
-            <i className={`bi ${'bi-brightness-high'} ${classes['icon-test']}`}>
+            <i className={`bi ${'bi-brightness-high'} ${classes['icon-style']}`}>
             </i>
             <p className={classes['disply-date']}>{`${getDate()[1]} ,${getDate()[0]} ,${getDate()[2]}`}</p>
         </Container>
