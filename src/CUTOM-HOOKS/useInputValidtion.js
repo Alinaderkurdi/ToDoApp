@@ -15,7 +15,7 @@ const useInputValidation = ()=>{
     }
   }
 
-  return [disabledButton, inputValue , getInput]
+  return [disabledButton, inputValue , getInput , setDisabledButton]
 
 }
 
