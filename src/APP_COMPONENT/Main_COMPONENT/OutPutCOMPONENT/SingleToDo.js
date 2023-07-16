@@ -31,7 +31,7 @@ const SingleToDo = ()=>{
                don't be a overthink
             </p>
             <Button buttonProps={style['import-button']} functionHandeler={addToImportent}>
-               {importTent ? <i class="bi bi-star-fill"></i> : <i class="bi bi-star"></i>}
+               {importTent ? <i className="bi bi-star-fill"></i> : <i class="bi bi-star"></i>}
             </Button>
             <div className={style['option-box']}>
 
