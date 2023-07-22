@@ -1,0 +1,33 @@
+
+
+.continer-main{
+    width: 99%;
+    height: 300px;
+    border: 1px red solid;
+    overflow: inherit;
+    overflow-x: inherit;
+    height: inherit;
+    background: none;
+}
+
+
+.continer-main::-webkit-scrollbar{
+    width: 6px;
+    height: 100vh;
+    border-radius: 20px;
+   /* background-color: #696868;*/
+    background: none
+};
+
+::-webkit-scrollbar-track{
+    appearance: none;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    appearance: none;
+    width: 5px;
+    height: 5px;
+    background-color: #696868;
+    border-radius: 6px;
+}
