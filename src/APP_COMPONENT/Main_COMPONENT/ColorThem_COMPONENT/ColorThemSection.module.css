@@ -1,0 +1,19 @@
+
+
+
+.color-them{
+    width: 30%;
+    height: 600px;
+    border: 1px  solid;
+    position: absolute;
+    top: 80px;
+    right: 1.5%;
+    border-radius: 4px;
+    max-width: 300px;
+    min-width: 300px;
+    background:  #252423;
+}
+
+.color-them-section-name{
+    margin: 4px 4px;
+}
