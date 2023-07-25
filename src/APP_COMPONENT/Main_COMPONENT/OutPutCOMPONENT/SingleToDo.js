@@ -23,7 +23,7 @@ const SingleToDo = ()=>{
     }
 
     return (
-        <Container style={style['singel-to-do-ontainer']}>
+        <Container style={style['singel-to-do-ontainer']} animation={{opasity: 1, y: 10}} initial={{opasity: 1 ,y:-20}} >
             <Button buttonProps={style['complete-button']} functionHandeler={completeToDo}>
                 {iscomplete ? <i className="bi bi-check-circle-fill"></i> : ''}
             </Button>
