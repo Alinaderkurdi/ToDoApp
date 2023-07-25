@@ -7,6 +7,11 @@ const initialState = {
         name : 'My Day',
         sectionLogo : 'bi-brightness-high',
         iconColor : '#039EDF',
+    },
+    colortheme: {
+        mainBackground: '#11100F',
+        seconderyBackground: '#252423',
+        fontColor: '#ffff',
     }
 }
 
@@ -15,6 +20,9 @@ const reduser = ( state= initialState, action)=>{
     if(action.type === 'CHANGE-PAGE'){
         return {
             ...state,
+            colortheme :{
+                ...state.colortheme
+            },
             stctionName : {
                 ...state.stctionName,
                 name : action.payload.name,
@@ -22,6 +30,16 @@ const reduser = ( state= initialState, action)=>{
                 iconColor: action.payload.iconColor
             }
         }
+    }else if (action.type === 'CHANGE-THEM'){
+        //return{
+        //   ...state,
+        //   stctionName: {
+        //    ...state.stctionName
+        //   },
+        //   colortheme: {
+        //    
+        //   }
+        //}
     }
 
     return{
