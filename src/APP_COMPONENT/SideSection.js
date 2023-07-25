@@ -10,7 +10,7 @@ const SideSection = ()=>{
         <Container style={style['side-main']}>
             <UserBox></UserBox>
             <SearchBox></SearchBox>
-            <DefaultListSection></DefaultListSection>
+            <DefaultListSection />
         </Container>
     )
 }

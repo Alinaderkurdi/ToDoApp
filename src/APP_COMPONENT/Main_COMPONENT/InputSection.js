@@ -27,17 +27,11 @@ const InputSection = ()=>{
       content : value,
       addToImport: false,
       complete: false,
-      key:keyGenerator(4)
+      key:keyGenerator(4),
+      pageName : 'my-day',
     }
     return toDo;
    }
- // {
- //  key: '123',
- //  content : 'don be a overthink',
- //  addToImportent : false,
- //  sectionName : 'my Day// add a function for get current app section',
- //  complete: false
- // }
 
    const getCurrentValue = ()=>{
       console.log(createNewToDo(inputValue))

@@ -2,11 +2,19 @@
 
 .default-list-main{
     width: 90%;
-    height: 270px;
+    height: 320px;
     /*border: 1px red solid;*/
     border-bottom: 1px #696969 solid;
     margin-left: 4px;
     margin-top: 20px;
+}
+
+a.active{
+    color: red;
+}
+
+.link-style{
+    text-decoration: none;
 }
 
 

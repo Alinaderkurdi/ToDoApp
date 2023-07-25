@@ -4,7 +4,7 @@ import { motion } from 'framer-motion/dist/framer-motion'
 
 
 const Container = (props) =>{
-    console.log(props.animation)
+    //console.log(props.animation)
     return(
         <motion.div className={props.style}
          animate={props.animation}
