@@ -3,7 +3,7 @@
 .continer-main{
     width: 99%;
     height: 300px;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
     overflow: inherit;
     overflow-x: inherit;
     height: inherit;
