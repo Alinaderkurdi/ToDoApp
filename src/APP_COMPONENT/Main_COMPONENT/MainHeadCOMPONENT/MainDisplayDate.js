@@ -1,12 +1,13 @@
 import React from 'react';
-
 import classes from './MainDisplay.module.css';
-
 import Container from '../../../CUSTOM-COMPONENT/Container';
+import { useSelector } from 'react-redux';
 
 const MainDisplayDate = ()=>{
-    // My Day <i className="bi bi-brightness-high"></i>
-    //line 48 need to add inline style!!!
+    const selectedPage =  useSelector( state => state.stctionName)
+    console.log(selectedPage)
+    const iconColor = selectedPage.iconeColor;
+
     const date = new Date()
     const months= [
         'January',
@@ -44,9 +45,10 @@ const MainDisplayDate = ()=>{
     return (
         <Container style={classes['display-main']}>
             <h1 className={classes['app-section-name']}>
-             My Day
+             {selectedPage.name}
             </h1>
-            <i className={`bi ${'bi-brightness-high'} ${classes['icon-style']}`}>
+            <i style={{ color:selectedPage.iconColor}} className={`bi ${`${selectedPage.sectionLogo}`} ${classes['icon-style']}`}>
+
             </i>
             <p className={classes['disply-date']}>{`${getDate()[1]} ,${getDate()[0]} ,${getDate()[2]}`}</p>
         </Container>
