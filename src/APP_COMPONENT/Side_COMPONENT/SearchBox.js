@@ -1,5 +1,5 @@
 
-import React , {useRef, useState} from 'react';
+import React , {useRef} from 'react';
 
 import style from './SearchBox.module.css';
 import  InputFild from '../../CUSTOM-COMPONENT/InputFild'; 

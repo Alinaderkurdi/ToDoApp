@@ -27,9 +27,13 @@ const PageButton = (props)=>{
     )
   }
   
+
   return(
           <div className={classes['link-button']} onClick={getlingButtonInfo}>
-            <i className={`bi ${props.iconName}`}style={{color: props.iconColor,fontSize: '1.3rem'}}>
+            <i className={`bi ${props.iconName}`}style={{
+              fontSize: '1.3rem',
+              color: props.iconColor
+            }}>
 
             </i>
             {props.children}

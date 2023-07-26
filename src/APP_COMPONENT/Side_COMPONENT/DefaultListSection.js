@@ -10,7 +10,7 @@ const DefaultListSection = ()=>{
     return(
         <Container style={style['default-list-main']}>
            
-                    <NavLink to='' className={style['link-style']}>
+                    <NavLink to='' className={`${style['link-style']}`}>
                       <PageButton 
                       toDoCounter={10} 
                       SectionName={'My Day'}
