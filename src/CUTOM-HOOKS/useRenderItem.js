@@ -8,8 +8,9 @@ import React from 'react';
 
 const useReanderItem  = (pageToDo)=>{
    const getKey = Object.keys(pageToDo)
-    const key =  getKey[0]
-   let result = pageToDo.toDoOnWork === 0 ? <NoneContentPage /> :
+   const key =  getKey[0]
+   const counter = getKey[1]
+   let result = pageToDo[counter] === 0 ? <NoneContentPage /> :
    pageToDo[key].map( todos => <SingleToDo todoData={todos} key={todos.todoValue.key}/>)
    return result
 }
