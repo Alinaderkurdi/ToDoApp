@@ -2,28 +2,21 @@ import React from 'react';
 import classes from './PageButton.module.css';
 import { useDispatch } from 'react-redux';
 import Container from '../../../CUSTOM-COMPONENT/Container';
+import { sectionAction} from '../../../STORE/SLICES/stection-name'
 
 
 const PageButton = (props)=>{
-  const { 
-    SectionName : name,
-    iconColor,
-    iconName : sectionLogo
-   } = props
-
+  const {SectionName, iconColor, iconName} = props
+  
   const dispatchAction =  useDispatch()
 
   const getlingButtonInfo = ()=>{
-
     dispatchAction(
-      {
-        type : 'CHANGE-PAGE',
-        payload: {
-          name,
-          iconColor,
-          sectionLogo
-        }
-      }
+      sectionAction.changePage({
+        SectionName,
+        iconColor,
+        iconName,
+      })
     )
   }
   
