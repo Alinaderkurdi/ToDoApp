@@ -1,11 +1,11 @@
 
 
-
 .image-button-section{
    width: 98%;
-   height: 170px;
-   border: 1px red solid;
+   height: 62px;
+ /*  border: 1px red solid;*/
    margin: 2px auto;
+   margin-bottom: 0px;
 }
 
 .image-button{
@@ -14,13 +14,49 @@
     background: none;
     border: none;
     outline: none;
-    border: 1px red solid;
     margin-top: 1.5px;
     margin-left: 1.5px;
     border-radius: 2px;
-    background: url('../../../img-beakground/pexels-max-ravier-5605765.jpg');
+    background: url('../../../img-beakground/pexels-walid-ahmad-909656.jpg');
     background-position: center ;
     background-repeat: no-repeat;
     background-size:cover;
 
+}
+
+.image-button:hover{
+    scale: 1.1;
+}
+
+.show-more-image{
+    width: 56px;
+    height: 55px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 1.5px;
+    margin-left: 1.5px;
+    border-radius: 2px;
+    font-size: 1.4rem;
+  /*  border : 1px red solid;*/
+    position: absolute;
+}
+
+
+.input-holder{
+    width: 70px;
+    height: 55px;
+    border: 1px red solid;
+    display: inline;
+}
+
+
+.input-holder .lable-style{
+    width: 56px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.input-fild{
+    display: none;
 }

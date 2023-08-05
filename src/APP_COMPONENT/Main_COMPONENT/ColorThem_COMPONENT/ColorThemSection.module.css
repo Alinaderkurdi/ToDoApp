@@ -4,14 +4,20 @@
 .color-them{
     width: 30%;
     height: 600px;
-    border: 1px  solid;
+    border: 1px  inherit;
     position: absolute;
     top: 80px;
     right: 1.5%;
     border-radius: 4px;
     max-width: 300px;
     min-width: 300px;
-    background:  #252423;
+    background:  #E7ECF0;
+    z-index: 100;
+    color: inherit;
+    box-shadow: 
+    0px 10px 50px 0px hsla(0,0%,0%,0.14), 
+    0px 9px 46px 8px hsla(0,0%,0%,0.12), 
+    0px 11px 15px -7px hsla(0,0%,0%,0.2)
 }
 
 .color-them-section-name{

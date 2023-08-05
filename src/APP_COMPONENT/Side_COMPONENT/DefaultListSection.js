@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 
 const DefaultListSection = ()=>{
   const todos = useSelector((state) =>{return state.todo})
-    console.log(todos)
+    //console.log(todos)
     const keys = Object.keys(todos)
     const counters = []
     for (let i = 0 ; i < keys.length ; i++){

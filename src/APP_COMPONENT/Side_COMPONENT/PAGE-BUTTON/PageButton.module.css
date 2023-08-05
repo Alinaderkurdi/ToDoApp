@@ -15,20 +15,29 @@
     color: inherit;
 }
 
-.link-button:hover{
+.link-button-darke:hover{
     background-color: #3B3A39;
 }
+
+.link-button-light:hover{
+     background-color:  #D5D4D4;
+}
+
+
 
 
 .section-name{
     margin-left: -50%;
+    color: inherit;
 }
 
 
 .to-do-counter{ 
    font-size: 0.9rem; 
+   color: inherit
 }
 
 i{
     margin-left: 2px;
+    color: inherit;
 }

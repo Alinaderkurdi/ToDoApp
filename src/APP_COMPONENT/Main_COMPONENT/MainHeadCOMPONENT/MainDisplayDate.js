@@ -4,10 +4,8 @@ import Container from '../../../CUSTOM-COMPONENT/Container';
 import { useSelector } from 'react-redux';
 
 const MainDisplayDate = ()=>{
-    const selectedPage =  useSelector( state => state.stctionName)
-    console.log(selectedPage)
-    const iconColor = selectedPage.iconeColor;
-
+   // const themeBackground = useSelector(state => state.colortheme)
+   const selectedPage = useSelector(state => state.section)
     const date = new Date()
     const months= [
         'January',
@@ -47,8 +45,7 @@ const MainDisplayDate = ()=>{
             <h1 className={classes['app-section-name']}>
              {selectedPage.name}
             </h1>
-            <i style={{ color:selectedPage.iconColor}} className={`bi ${`${selectedPage.sectionLogo}`} ${classes['icon-style']}`}>
-
+            <i style={{color: selectedPage.iconColor}} className={`bi ${`${selectedPage.sectionLogo}`} ${classes['icon-style']}`}>
             </i>
             <p className={classes['disply-date']}>{`${getDate()[1]} ,${getDate()[0]} ,${getDate()[2]}`}</p>
         </Container>

@@ -2,8 +2,9 @@
 .button-color-section{
     width : 98%;
     height: 190px;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
     margin: 1px auto;
+    
 }
 
 
@@ -14,9 +15,17 @@
     outline: none;
     border: none;
     background: none;
-    border: 1px  solid;
+    border: 1px  inherit;
     border-radius: 2px;
     margin-top: 1.5px;
     margin-left: 1px;
     display: inline-block;
+    box-shadow: 
+    0px 10px 50px 0px hsla(0,0%,0%,0.14), 
+    0px 9px 70px 8px hsla(0,0%,0%,0.12), 
+    0px 10px 10px -30px hsla(0,0%,0%,0.2);
+}
+
+.color-button:hover{
+    scale: 1.1;
 }

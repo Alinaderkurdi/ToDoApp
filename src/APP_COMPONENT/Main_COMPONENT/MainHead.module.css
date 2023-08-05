@@ -1,7 +1,6 @@
 .main-head{
     width: 90%;
     height: 83px;
-  /*  border : 1px red solid; */
     margin: 15px auto;
     margin-bottom: 0px;
     display: flex;
@@ -10,14 +9,28 @@
 }
 
 
-.color-them-button{
-    width: 60px;
-    height: 40px;
-    font-size: 1.4rem;
-    color: #ffff;
-    background: none;
-    border: none;
-    margin-right: 5px;
-    border-radius: 4px;
-    background-color: #27242E;;
+.setting-button{
+  width: 50px;
+  height: 30px;
+  font-size: 1.3rem;
+  color: inherit;
+  background: none;
+  border: none;
+  margin-right: 5px;
+  border-radius: 4px;
+  background-color: inherit;
+  cursor: pointer;
+ 
 }
+
+.setting-button-light {
+  box-shadow: 
+  0px 10px 50px 0px hsla(0,0%,0%,0.14), 
+  0px 9px 46px 8px hsla(0,0%,0%,0.12), 
+  0px 11px 15px -7px hsla(0,0%,0%,0.2)
+}
+
+.setting-button-darke{
+  background-color: #212121;
+}
+
