@@ -7,11 +7,13 @@ import { useSelector } from 'react-redux';
 //console.log(props.inlineStyle)
 //style={{['background-color']: []}}
 
+
+
 const Container = (props) =>{
   const themeBackground = useSelector(state => state.them)
   const backgroundKey = props.backgroundColor;
   const fontColorKey  = props.fontColor;
-  console.log(themeBackground.typeOfBackground)
+  const backGroundPeroperty = themeBackground.typeOfBackground === 'IMAGE' && props.addImg ? 'background-image' : 'background';
     
   return(
       <motion.div className={props.style}
@@ -19,7 +21,7 @@ const Container = (props) =>{
        initial={props.initial}
        transition={{duration:props.durationValue}}
        style={{
-       ['background'] : themeBackground[backgroundKey],
+        [backGroundPeroperty] : themeBackground.typeOfBackground === 'IMAGE' && props.addImg ? `url(${require(`../img-beakground/${themeBackground.mainBackground}`)}` : themeBackground[backgroundKey],
         color: themeBackground[fontColorKey]
         }}>
           {props.children}
@@ -30,4 +32,4 @@ const Container = (props) =>{
 }
 
 
-export default Container;
+export default React.memo(Container)

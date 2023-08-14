@@ -7,21 +7,13 @@
    margin-bottom: 0px;
 }
 
-.image-button{
+.image-holder{
     width: 56px;
     height: 55px;
     background: none;
     border: none;
-    outline: none;
     margin-top: 0px;
     margin-left: 1.5px;
     border-radius: 2px;
-    background: url('../../../../img-beakground/pexels-walid-ahmad-1509582.jpg');
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
-.image-button:hover{
-    scale: 1.1;
+    cursor: pointer;
 }

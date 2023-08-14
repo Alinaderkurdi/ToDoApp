@@ -9,14 +9,15 @@ import { useSelector } from 'react-redux';
 
 const Main  = ()=>{
   const colorThem = useSelector(state => state.them)
-
-  const imageBackround = colorThem.mainBackground
-  //console.log(colorThem)
-  //mainBackground
- // themeBackground.typeOfBackground === 'COLOR' ? themeBackground[backgroundKey] : ''
-
+  const imageBackround = colorThem.typeOfBackground
+  const addImageBackGround = imageBackround  === 'COLOR' ? false : true
+ 
   return(
-    <Container style={style['main-ontainer ']}  backgroundColor={'mainBackground'}>
+    <Container 
+     style={`${style['main-ontainer']}   ${addImageBackGround ?  style['image-background-setup'] : null}`}
+     backgroundColor={'mainBackground'}
+     addImg={addImageBackGround}
+     >
       <MainHead />
       <OutPut />
       <InputSection />

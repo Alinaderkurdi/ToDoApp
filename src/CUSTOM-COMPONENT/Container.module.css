@@ -1,3 +1,6 @@
-/*.test{
-    background: url('../img-beakground/pexels-adrien-olichon-2387793.jpg');
-}*/
+.test{
+    background: url('../img-beakground/pexels-pixabay-206359.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+}

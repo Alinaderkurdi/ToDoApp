@@ -3,11 +3,42 @@
 .image-button-section{
    width: 98%;
    height: 62px;
- /*  border: 1px red solid;*/
    margin: 2px auto;
    margin-bottom: 0px;
+   overflow: auto;
+   overflow-x: hidden;
+   height: max-content;
+}
+.open-test{
+    height: 40px
 }
 
+
+.show-more-image{
+    width: 56px;
+    height: 55px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 1.5px;
+    margin-left: 1.5px;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    position: absolute;
+}
+
+
+.image-holder{
+    width: 56px;
+    height: 55px;
+    margin-top: 1.5px;
+    margin-left: 1.5px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+/*
 .image-button{
     width: 56px;
     height: 55px;
@@ -27,36 +58,4 @@
 .image-button:hover{
     scale: 1.1;
 }
-
-.show-more-image{
-    width: 56px;
-    height: 55px;
-    background: none;
-    border: none;
-    outline: none;
-    margin-top: 1.5px;
-    margin-left: 1.5px;
-    border-radius: 2px;
-    font-size: 1.4rem;
-  /*  border : 1px red solid;*/
-    position: absolute;
-}
-
-
-.input-holder{
-    width: 70px;
-    height: 55px;
-    border: 1px red solid;
-    display: inline;
-}
-
-
-.input-holder .lable-style{
-    width: 56px;
-    height: 55px;
-    cursor: pointer;
-}
-
-.input-fild{
-    display: none;
-}
+*/

@@ -4,9 +4,13 @@
     background-color: #1A1B1D;
     background-color: #11100F;
     grid-column: 2/3;
-    background: url('../img-beakground/pexels-walid-ahmad-1509582.jpg');
-    background-position: center center;
-    background-size: cover; 
+    /*background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;*/
 }
 
-
+.image-background-setup{
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}

@@ -4,21 +4,26 @@ import Container from '../../../CUSTOM-COMPONENT/Container';
 import Button from '../../../CUSTOM-COMPONENT/Button';
 import style from './SingleToDo.module.css';
 import {useSelector} from 'react-redux'
+import MoreOption from './SINGEL-TODO-COMPONENT/MoreOption';
+import BackDrop from '../../../CUSTOM-COMPONENT/BackDrop';
+import ReactDOM from 'react-dom'
 //<i class="bi bi-star-fill"></i>
 //<i class="bi bi-check-circle-fill"></i>
 //"bi bi-star".
 // style={{color: currentThemColor.fontColor}}
 
 const SingleToDo = (props)=>{
+   // console.log(props)
+    const [showSingelTodoOption, setshowSingelTodoOption] = useState(false)
     const toDoInfo =  props.todoData.todoValue.pageNameInfo;
     const currentThemColor = useSelector(state => state.them)
    // console.log(currentThemColor)
     const [iscomplete, iscompleteUpdater] = useState(props.todoData.todoValue.complete)
     const [importTent, ImportentUpdater]  = useState(props.todoData.todoValue.addToImport)
 
-    const deleteToDo = ()=>{
-        console.log('delete todo')
-        //write a logic to show a component to show more option
+    const showTodoOption = ()=>{
+        setshowSingelTodoOption ( prev => ! prev)
+        console.log(props.todoData.todoValue)
     }
 
     const completeToDo = ()=>{
@@ -49,10 +54,11 @@ const SingleToDo = (props)=>{
             <div className={style['option-box']}>
              <i className={`bi ${toDoInfo.sectionLogo}`} style={{color:toDoInfo.iconColor}}></i>
              <p className={style['page-name']}>{toDoInfo.name}</p>
-             <Button buttonProps={style['more-button']} functionHandeler={deleteToDo}>
-                <i className="bi bi-three-dots"></i>
+             <Button buttonProps={style['more-button']} functionHandeler={showTodoOption}>
+                {showSingelTodoOption ?  <i className="bi bi-x"></i> :  <i className="bi bi-three-dots"></i>}
              </Button>
-                
+             {showSingelTodoOption ? ReactDOM.createPortal(<BackDrop  functionPointer={showTodoOption}/> , document.getElementById('back-drop-section')) : null}
+             {showSingelTodoOption ? ReactDOM.createPortal(<MoreOption  data={props.todoData}/>, document.getElementById('setting-section')) : null}
             </div>
         </Container>
     )

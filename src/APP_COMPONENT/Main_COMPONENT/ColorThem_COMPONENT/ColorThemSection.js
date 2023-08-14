@@ -5,15 +5,19 @@ import style from './ColorThemSection.module.css';
 import Button from '../../../CUSTOM-COMPONENT/Button';
 import ColorButtonSection from './ColorButtonSection';
 import ImageButtonSection from './ImageButtonSection';
-//import { motion } from 'framer-motion/dist/framer-motion'
+import Setting from './SETTING-SECTION/SettingSection';
 import { useSelector } from 'react-redux';
 
-
-
+//<p className={style['setting-section-name']} style={{['margin-top']: a ? '100px' : '0px'}}>
+//                SETTING
+//            </p>
+//            <Setting />
+//
 
 const ColorThemSection = ()=>{
-    const themeBackground = useSelector(state => state.colortheme)
+    //const themeBackground = useSelector(state => state.colortheme)
     //console.log(themeBackground)
+
 
     return(
         <Container style={style['color-them']}
@@ -26,6 +30,10 @@ const ColorThemSection = ()=>{
             </p>
             <ColorButtonSection />
             <ImageButtonSection />
+            <p className={style['setting-titel']}>
+                SETTING
+            </p>
+            <Setting />
         </Container>
     )
 }
