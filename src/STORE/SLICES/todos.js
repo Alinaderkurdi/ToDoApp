@@ -57,6 +57,7 @@ const todosSlice = createSlice({
           })
         },
         removeAllToDo : (state, action)=>{
+           // console.log(action.payload.objectKey , action.payload.counter, action.payload.todos)
             const objectKey = action.payload.objectKey
             const counterKey  = action.payload.counter
             const peropertyName = action.payload.todos
