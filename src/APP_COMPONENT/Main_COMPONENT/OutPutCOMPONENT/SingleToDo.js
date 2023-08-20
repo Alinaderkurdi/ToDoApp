@@ -23,7 +23,7 @@ const SingleToDo = (props)=>{
 
     const showTodoOption = ()=>{
         setshowSingelTodoOption ( prev => ! prev)
-        console.log(props.todoData.todoValue)
+      //  console.log(props.todoData.todoValue)
     }
 
     const completeToDo = ()=>{

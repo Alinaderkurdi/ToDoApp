@@ -1,0 +1,42 @@
+
+.asck-main{
+    width: 330px;
+    height: 160px;
+    border-radius: 3px;
+}
+
+.text-holder{
+    font-size: 1.1rem;
+    color: inherit;
+    margin-top: 0px;
+    display: block;
+    margin-left: 40px;
+}
+
+
+.delete-button{
+    width: 100px;
+    height: 35px;
+    background-color: #3F96D0;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top:  40px;
+    margin-left: 60px;
+}
+
+
+.cancel-button{
+    width: 70px;
+    height: 35px;
+    background-color: #ffff;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 40px;
+}

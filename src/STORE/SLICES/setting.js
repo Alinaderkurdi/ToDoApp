@@ -3,8 +3,14 @@ import { createSlice } from '@reduxjs/toolkit';
 
 
 const initialSetting = {
-    confirmBefroeDeleting : true,
-    enableTrashBin : false,
+    confirmBefroeDeleting : {
+        settingId : 'confirmBefroeDeleting',
+        isEnable: true,
+    },
+    enableTrashBin : {
+        settingId : 'enableTrashBin',
+        isEnable : false
+    }
 }
 
 
@@ -12,9 +18,11 @@ const setting = createSlice({
     name : 'setting',
     initialState : initialSetting,
     reducers: {
-        confirmBefroeDeleting: (state,action)=>{
-            state.confirmBefroeDeleting = action.payload.enable
-        }
+       setNewSetting : (state, action)=>{
+        const  settingKey =  action.payload.settingName
+        const  settingNameValue =   action.payload.settingNewState
+        state[settingKey] = settingNameValue
+       }
     }
 })
 
