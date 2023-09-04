@@ -5,10 +5,11 @@ import Button from '../../../../CUSTOM-COMPONENT/Button';
 import { ToDoActions } from '../../../../STORE/SLICES/todos';
 import { useDispatch, useSelector } from 'react-redux';
 import AsckBeforeDeleting from './AsckBeforeDeleting';
+import useAddBoxShadow from '../../../../CUTOM-HOOKS/useAddBoxShadow';
 
 
 const MoreOption = (props)=>{
-  
+  const boxShadow = useAddBoxShadow()
   const test = useSelector(state => state.todo)
   const addDeleteBox = useSelector(state => state.settings.confirmBefroeDeleting)
   const {objectKey, counter, todos } = props.data
@@ -42,7 +43,7 @@ const MoreOption = (props)=>{
   }
   return(
     <Container
-     style={style['more-option-main']}
+     style={`${style['more-option-main']} ${boxShadow}`}
      backgroundColor={'secondrayColor'}
      animation={{opasity: 1, y: 2, scale:1}}
      initial={{opasity: 0.5 ,y:-1, scale: 0.8}}
@@ -55,7 +56,6 @@ const MoreOption = (props)=>{
        deleteFuctionPointer={dispatchDeleteToDo}
        cancelHandeler={cancelDelete} /> 
        : null}
-       
     </Container>
   )
 }

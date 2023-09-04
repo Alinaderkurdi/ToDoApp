@@ -9,7 +9,10 @@ import DefaultListSection from './Side_COMPONENT/DefaultListSection';
 const SideSection = ()=>{
 
     return(
-        <Container style={style['side-main']} fontColor={'fontColor'} backgroundColor={'secondrayColor'}>
+        <Container style={style['side-main']}
+         fontColor={'fontColor'}
+         backgroundColor={'secondrayColor'}
+         >
             <UserBox></UserBox>
             <SearchBox></SearchBox>
             <DefaultListSection />

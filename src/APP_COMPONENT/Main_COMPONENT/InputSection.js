@@ -3,10 +3,13 @@ import Container from '../../CUSTOM-COMPONENT/Container';
 import style from './InputSection.module.css';
 import InputFild from '../../CUSTOM-COMPONENT/InputFild';
 import useInputValidation from '../../CUTOM-HOOKS/useInputValidtion';
+import GetReminder from './input-section-component/GetReminder';
 import { useSelector } from 'react-redux';
 import { ToDoActions } from '../../STORE/SLICES/todos';
 import { useDispatch } from 'react-redux';
 import Button from '../../CUSTOM-COMPONENT/Button';
+import useAddBoxShadow from '../../CUTOM-HOOKS/useAddBoxShadow';
+
 
 
 //plan 1 : with current selcted page send diffrent action based on page and every to to go insid own object
@@ -14,11 +17,15 @@ import Button from '../../CUSTOM-COMPONENT/Button';
 
 
 const InputSection = ()=>{
+  // const box = useAddBoxShadow()
    const dispatchToDo = useDispatch()
    const currentPage = useSelector(state => state.section)
    const [showOption, setShowOption] = useState(false)
    const selectedPage =  {...currentPage};
    const currentColorThem = useSelector(state => state.them)
+   const a = true
+   const boxShadow = useAddBoxShadow()
+
 
  //  if(currentColorThem.mainBackground === '#11100F')
   //console.log(selectedPage)
@@ -146,7 +153,9 @@ const InputSection = ()=>{
 
 
    return(
-      <Container style={`${style['input-section-main']} ${currentColorThem.mainBackground === '#11100F' ? style['wite-box-shadow']: style['black-box-shadow']}`} fontColor={'fontColor'}>
+      <Container 
+      style={`${style['input-section-main']} ${boxShadow}`}
+      fontColor={'fontColor'}>
        <InputFild 
          functionHandeler={getInput}
          elementRef={inputFild}
@@ -166,15 +175,7 @@ const InputSection = ()=>{
          animation={{opasity: 1, y:-40,}}
          initial={{opasity: 0 ,y: -25,}}
          durationValue={0.1}>
-            <Button>
-              <i className="bi bi-bell"></i>
-            </Button>
-            <Button>
-               
-            </Button>
-            <Button>
-               
-            </Button>
+          {a ? <GetReminder /> : null}
          </Container>: null}
 
       </Container>

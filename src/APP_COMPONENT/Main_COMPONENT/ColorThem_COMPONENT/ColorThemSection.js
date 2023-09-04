@@ -2,11 +2,11 @@
 import React from 'react';
 import Container from '../../../CUSTOM-COMPONENT/Container';
 import style from './ColorThemSection.module.css';
-import Button from '../../../CUSTOM-COMPONENT/Button';
 import ColorButtonSection from './ColorButtonSection';
 import ImageButtonSection from './ImageButtonSection';
 import Setting from './SETTING-SECTION/SettingSection';
 import { useSelector } from 'react-redux';
+import useAddBoxShadow from '../../../CUTOM-HOOKS/useAddBoxShadow';
 
 //<p className={style['setting-section-name']} style={{['margin-top']: a ? '100px' : '0px'}}>
 //                SETTING
@@ -15,12 +15,13 @@ import { useSelector } from 'react-redux';
 //
 
 const ColorThemSection = ()=>{
+    const boxShadow = useAddBoxShadow()
     //const themeBackground = useSelector(state => state.colortheme)
     //console.log(themeBackground)
 
 
     return(
-        <Container style={style['color-them']}
+        <Container style={`${style['color-them']} ${boxShadow}`}
         animation={{opasity: 1, y: 0, scale:1}}
         initial={{opasity: 0 ,y: -20, scale: 0}}
         durationValue={0.1}

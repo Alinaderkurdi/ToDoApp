@@ -13,7 +13,8 @@ const AssigendToMe =()=>{
     return(
         <Container style={style['continer-main']}>
             {outPut}
-            {reanderDeleteAllButton ? <Button buttonProps={style['delete-all-button']} functionHandeler={deleteAll}><i className="bi bi-trash3"></i></Button> : null}
+            {reanderDeleteAllButton ? <Button buttonProps={`${style['delete-all-button']}`} 
+            functionHandeler={deleteAll}><i className="bi bi-trash3"></i></Button> : null}
         </Container>
     )
 }

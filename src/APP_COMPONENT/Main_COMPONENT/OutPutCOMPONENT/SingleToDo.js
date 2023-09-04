@@ -7,12 +7,10 @@ import {useSelector} from 'react-redux'
 import MoreOption from './SINGEL-TODO-COMPONENT/MoreOption';
 import BackDrop from '../../../CUSTOM-COMPONENT/BackDrop';
 import ReactDOM from 'react-dom'
-//<i class="bi bi-star-fill"></i>
-//<i class="bi bi-check-circle-fill"></i>
-//"bi bi-star".
-// style={{color: currentThemColor.fontColor}}
+import useAddBoxShadow from '../../../CUTOM-HOOKS/useAddBoxShadow';
 
 const SingleToDo = (props)=>{
+    const boxShadow = useAddBoxShadow()
    // console.log(props)
     const [showSingelTodoOption, setshowSingelTodoOption] = useState(false)
     const toDoInfo =  props.todoData.todoValue.pageNameInfo;
@@ -35,7 +33,7 @@ const SingleToDo = (props)=>{
     }
 
     return (
-        <Container style={style['singel-to-do-ontainer']} 
+        <Container style={`${style['singel-to-do-ontainer']}`} 
         animation={{opasity: 1, y: 2, scale:1}}
         initial={{opasity: 0.5 ,y:-1, scale: 0.8}}
         durationValue={0.2}

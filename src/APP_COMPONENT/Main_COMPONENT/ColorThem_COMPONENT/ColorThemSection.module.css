@@ -1,6 +1,4 @@
 
-
-
 .color-them{
     width: 34%;
     height: 600px;
@@ -14,10 +12,6 @@
     background:  #E7ECF0;
     z-index: 100;
     color: inherit;
-    box-shadow: 
-    0px 10px 50px 0px hsla(0,0%,0%,0.14), 
-    0px 9px 46px 8px hsla(0,0%,0%,0.12), 
-    0px 11px 15px -7px hsla(0,0%,0%,0.2);
     overflow: auto;
     overflow-x: hidden;
 }
@@ -43,3 +37,10 @@
     margin-top: 10px;
     font-size: 1rem;
 }
+
+/*
+ box-shadow: 
+    0px 10px 50px 0px hsla(0,0%,0%,0.14), 
+    0px 9px 46px 8px hsla(0,0%,0%,0.12), 
+    0px 11px 15px -7px hsla(0,0%,0%,0.2);
+*/

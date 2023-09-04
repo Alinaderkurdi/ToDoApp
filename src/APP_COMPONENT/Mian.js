@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {state, useState} from 'react';
 import Container from '../CUSTOM-COMPONENT/Container';
 import style from './Main.module.css';
 import MainHead from './Main_COMPONENT/MainHead';

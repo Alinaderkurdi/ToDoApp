@@ -3,6 +3,7 @@ import React from "react";
 import Container from "../../../../CUSTOM-COMPONENT/Container";
 import Button from "../../../../CUSTOM-COMPONENT/Button";
 import style from './AsckBeforeDeleting.module.css';
+import useAddBoxShadow from "../../../../CUTOM-HOOKS/useAddBoxShadow";
 //import { ToDoActions } from "../../../../STORE/SLICES/todos";
 //import { useDispatch } from "react-redux";
 
@@ -10,9 +11,10 @@ import style from './AsckBeforeDeleting.module.css';
 
 
 const AsckBeforeDeleting = (props)=>{
+    const boxShadow = useAddBoxShadow()
 
     return(
-        <Container style={style['asck-main']}
+        <Container style={`${style['asck-main']} ${boxShadow}`}
         backgroundColor={'secondrayColor'}
         >
           <p className={style['text-holder']}>
