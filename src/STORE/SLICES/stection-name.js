@@ -12,7 +12,7 @@ const sectionSlice =  createSlice({
     name: 'section-name',
     initialState : sectionNameState,
     reducers : {
-        changePage:(state, action)=>{
+        changePage(state, action){
             state.name = action.payload.SectionName
             state.sectionLogo = action.payload.iconName 
             state.iconColor = action.payload.iconColor

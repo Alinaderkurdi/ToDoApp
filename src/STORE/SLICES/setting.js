@@ -18,7 +18,7 @@ const setting = createSlice({
     name : 'setting',
     initialState : initialSetting,
     reducers: {
-       setNewSetting : (state, action)=>{
+       setNewSetting(state, action){
         const  settingKey =  action.payload.settingName
         const  settingNameValue =   action.payload.settingNewState
         state[settingKey] = settingNameValue
