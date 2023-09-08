@@ -13,7 +13,6 @@ const Image = (props)=>{
         <img className={props.style}
          src={require(`../img-beakground/${props.imageName}`)} 
          onClick={getImageInfo}> 
-        
         </img>
     )
 }

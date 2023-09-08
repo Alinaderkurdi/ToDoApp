@@ -1,0 +1,52 @@
+
+
+.continer-main{
+    width: 99%;
+    height: 300px;
+    /*border: 1px red solid;*/
+    overflow: inherit;
+    overflow-x: inherit;
+    height: inherit;
+    background: none;
+    margin-left: 6px;
+   /* border: 1px red solid;*/
+}
+
+
+.continer-main::-webkit-scrollbar{
+    width: 6px;
+    height: 100vh;
+    border-radius: 20px;
+   /* background-color: #696868;*/
+    background: none
+};
+
+::-webkit-scrollbar-track{
+    appearance: none;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    appearance: none;
+    width: 5px;
+    height: 5px;
+    background-color: #696868;
+    border-radius: 6px;
+}
+
+.delete-all-button{
+   width: 38px;
+   height: 38px;
+   position: absolute;
+   top: 84.2%;
+   left: 89.9%;
+   border-radius: 30px;
+   color : rgb(255, 0, 0);
+   font-size: 1.3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   border: none;
+   background: none;
+}

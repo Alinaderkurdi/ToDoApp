@@ -1,0 +1,31 @@
+
+
+.default-list-main{
+    width: 100%;
+    height: 270px;
+    /*border: 1px red solid;*/
+    border-bottom: 1px #696969 solid;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.link-style{
+    text-decoration: none;
+}
+
+
+.default-list-main a.active{
+    color: red;
+}
+
+
+.link-active{ 
+    color: red;
+}
+
+/*a.active{
+    background-color: #696969;
+}*/
+
+
+

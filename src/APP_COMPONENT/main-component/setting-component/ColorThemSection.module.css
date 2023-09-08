@@ -1,0 +1,46 @@
+
+.color-them{
+    width: 34%;
+    height: 600px;
+    border: 1px  inherit;
+    position: absolute;
+    top: 80px;
+    right: 1.5%;
+    border-radius: 4px;
+    max-width: 300px;
+    min-width: 300px;
+    background:  #E7ECF0;
+    z-index: 100;
+    color: inherit;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.color-them::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    background-color: #3e3b3b69;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    height: 6px;
+}
+
+
+.color-them-section-name{
+    margin: 4px 4px;
+}
+
+.setting-titel{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/*
+ box-shadow: 
+    0px 10px 50px 0px hsla(0,0%,0%,0.14), 
+    0px 9px 46px 8px hsla(0,0%,0%,0.12), 
+    0px 11px 15px -7px hsla(0,0%,0%,0.2);
+*/

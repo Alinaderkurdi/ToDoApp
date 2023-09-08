@@ -1,9 +1,9 @@
 import React from 'react';
 import Container from '../CUSTOM-COMPONENT/Container';
 import style from  './SideSection.module.css';
-import UserBox from './Side_COMPONENT/UserBox';
-import SearchBox from './Side_COMPONENT/SearchBox';
-import DefaultListSection from './Side_COMPONENT/DefaultListSection';
+import UserBox from './side-component/UserBox';
+import SearchBox from './side-component/SearchBox';
+import DefaultListSection from './side-component/DefaultListSection';
 
 
 const SideSection = ()=>{

@@ -14,6 +14,24 @@ const Container = (props) =>{
   const backgroundKey = props.backgroundColor;
   const fontColorKey  = props.fontColor;
   const backGroundPeroperty = themeBackground.typeOfBackground === 'IMAGE' && props.addImg ? 'backgroundImage' : 'background';
+
+  //console.log(backgroundKey)
+  let a = '#93a5cf'
+  let b = '#e4efe9'
+
+  const backGroundSelctor = ()=>{
+    
+    if(themeBackground.typeOfBackground === 'IMAGE' && props.addImg){
+      console.log('1')
+      return  `url(${require(`../img-beakground/${themeBackground.mainBackground}`)}`
+    }
+    if(backgroundKey === 'secondrayColor' && props.addImg){
+      return `linear-gradient(${a},${b})`
+    }
+    
+    return  themeBackground[backgroundKey]
+
+  }
     
   return(
     <AnimatePresence>
@@ -23,7 +41,9 @@ const Container = (props) =>{
        transition={{duration:props.durationValue}}
        exit={{ x: -300, opacity: 0}}
        style={{
-        [backGroundPeroperty] : themeBackground.typeOfBackground === 'IMAGE' && props.addImg ? `url(${require(`../img-beakground/${themeBackground.mainBackground}`)}` : themeBackground[backgroundKey],
+       // [backGroundPeroperty] : themeBackground.typeOfBackground === 'IMAGE' && props.addImg ? `url(${require(`../img-beakground/${themeBackground.mainBackground}`)}` : themeBackground[backgroundKey],
+       // [backGroundPeroperty] :  backGroundSelctor(),
+        [backGroundPeroperty] : backGroundSelctor(),
         color: themeBackground[fontColorKey]
         }}>
           {props.children}

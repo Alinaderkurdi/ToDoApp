@@ -45,7 +45,7 @@ const todosSlice = createSlice({
            state[action.payload.objectKey][action.payload.todos].splice(0,0,action.payload) 
            state[action.payload.objectKey][action.payload.counter] = state[action.payload.objectKey][action.payload.counter] +1
         },
-        removeToDo : (state,action)=>{
+        removeToDo(state,action){
           //state.key  ie: state.myDay //value ie: state.myDay.myDayToDo
           // console.log(object, objectValue , counterPeroperty)
           const object = action.payload.objectKey
@@ -56,7 +56,7 @@ const todosSlice = createSlice({
               return todos.todoValue.key !== action.payload.todoId
           })
         },
-        removeAllToDo : (state, action)=>{
+        removeAllToDo(state, action){
            // console.log(action.payload.objectKey , action.payload.counter, action.payload.todos)
             const objectKey = action.payload.objectKey
             const counterKey  = action.payload.counter
